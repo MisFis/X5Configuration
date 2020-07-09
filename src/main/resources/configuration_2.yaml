@@ -1,0 +1,28 @@
+#- количество потоков доступных для контейнера +
+#- список сервисов с именами и таймаутами +
+#- зависимости между сервисами +
+threadsCount: 2
+services:
+  mail:
+    timeout: 4000
+    dependsOn:
+      - 'api'
+  api:
+    timeout: 1000
+    dependsOn:
+  search:
+    timeout: 500
+    dependsOn:
+      - 'api'
+  db:
+    timeout: 50
+    dependsOn:
+      - 'api'
+  test:
+    timeout: 500
+    dependsOn:
+      - 'db'
+  validation:
+    timeout: 5
+    dependsOn:
+      - 'db'

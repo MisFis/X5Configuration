@@ -1,0 +1,71 @@
+#- количество потоков доступных для контейнера +
+#- список сервисов с именами и таймаутами +
+#- зависимости между сервисами +
+threadsCount: 1
+services:
+  service1:
+    timeout: 5
+    
+  service3:
+    timeout: 5
+    
+  service4:
+    timeout: 5
+    
+  service5:
+    timeout: 5000
+    
+  service6:
+    timeout: 5
+    
+  service7:
+    timeout: 5
+    
+  service8:
+    timeout: 5
+    
+  service9:
+    timeout: 5
+    
+  service10:
+    timeout: 5
+    
+  service11:
+    timeout: 5
+    
+  service12:
+    timeout: 5
+    
+  service13:
+    timeout: 5
+    
+  service14:
+    timeout: 5
+    
+  service15:
+    timeout: 5000
+    
+  service16:
+    timeout: 5
+    
+  service17:
+    timeout: 5
+    
+  service18:
+    timeout: 5
+    
+  service19:
+    timeout: 5
+    
+  service20:
+    timeout: 3000
+    
+  service21:
+    timeout: 5
+    
+  service22:
+    timeout: 5
+    
+  service23:
+    timeout: 2000
+    

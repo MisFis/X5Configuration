@@ -1,0 +1,34 @@
+#- количество потоков доступных для контейнера +
+#- список сервисов с именами и таймаутами +
+#- зависимости между сервисами +
+threadsCount: 1
+services:
+  serv1:
+    timeout: 50
+    dependsOn:
+      - 'serv2'
+  serv2:
+    timeout: 10000
+    dependsOn:
+      - 'serv3'
+  serv3:
+    timeout: 150
+    dependsOn:
+  serv4:
+    timeout: 250
+    dependsOn:
+      - 'serv2'
+  serv5:
+    timeout: 1000
+    dependsOn:
+      - 'serv6'
+  serv6:
+    timeout: 3000
+    dependsOn:
+      - 'serv2'
+  serv7:
+    timeout: 15
+    dependsOn:
+  serv8:
+    timeout: 5
+    dependsOn:
