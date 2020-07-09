@@ -35,7 +35,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.misfis.x5.runner.Main.java</mainClass>
+                            <mainClass>com.misfis.x5.runner.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

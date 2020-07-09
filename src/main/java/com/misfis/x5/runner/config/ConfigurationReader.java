@@ -2,6 +2,7 @@ package com.misfis.x5.runner.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.misfis.x5.runner.Main;
 import com.misfis.x5.runner.service.ServiceContainer;
 import com.misfis.x5.runner.model.ConfigurationData;
 import lombok.Getter;
@@ -9,6 +10,7 @@ import lombok.extern.java.Log;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.logging.Level;
 
@@ -40,8 +42,10 @@ public class ConfigurationReader {
        return new ServiceContainer(this.getThreadNumber(), this.properties.getServices());
     }
 
-    private File getConfigurationFile(String pathToFile) {
-        return new File(pathToFile);
+    private InputStream getConfigurationFile(String pathToFile) {
+        InputStream in = Main.class.getResourceAsStream(pathToFile);
+        // return new File(pathToFile);
+        return in;
     }
 
 }

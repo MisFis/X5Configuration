@@ -14,9 +14,9 @@ public class Main {
     static ExecutorService configurationRunners = Executors.newFixedThreadPool(4);
 
     static String[] configurationFiles = {
-            ClassLoader.getSystemResource("configuration.yaml").getPath(),
-            ClassLoader.getSystemResource("configuration_2.yaml").getPath(),
-            ClassLoader.getSystemResource("configuration_3.yaml").getPath()
+            "/configuration.yaml",
+            "/configuration_2.yaml",
+            "/configuration_3.yaml"
     };
 
     @SneakyThrows
